@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description"
+          content="KDD 2026 tutorial on trustworthy LLM-based agents for data-centric AI.">
+    <meta name="author" content="Tianlong Chen, Jian Pei, Minxing Zhang, Liang Zhao">
+
+    <title>KDD 2026 Tutorial | Trustworthy LLM-Based Agents for Data-Centric AI</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic"
+          rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet" type="text/css">
+
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/kdd-site.css" rel="stylesheet">
+
+    <script src="js/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body id="home">
+
+<header class="intro-header">
+    <div class="container hero-content">
+        <p class="conference-label wow fadeIn" data-wow-delay="0.2s">KDD 2026 Lecture-Style Tutorial</p>
+        <h1 class="h1_home wow fadeIn" data-wow-delay="0.35s">Trustworthy LLM-Based Agents for Data-Centric AI</h1>
+        <p class="hero-subtitle wow fadeIn" data-wow-delay="0.5s">
+            August 9-13, 2026 &middot; International Convention Center Jeju &middot; Time and room TBD
+        </p>
+        <div class="hero-links wow fadeIn" data-wow-delay="0.65s">
+            <a href="#program">Program</a>
+            <a href="#organizers">Organizers</a>
+            <a href="#materials">Materials</a>
+        </div>
+    </div>
+</header>
+
+<nav class="navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li class="menuItem"><a href="#overview">Overview</a></li>
+                <li class="menuItem"><a href="#program">Program</a></li>
+                <li class="menuItem"><a href="#organizers">Organizers</a></li>
+                <li class="menuItem"><a href="#materials">Materials</a></li>
+                <li class="menuItem"><a href="#contacts">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="overview" class="content-section-a">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 wow fadeInLeftBig" data-animation-delay="200">
+                <h2 class="section-heading">Overview</h2>
+                <p class="lead">
+                    Large language model agents are evolving from conversational assistants into autonomous systems that
+                    plan, reason, use tools, maintain memory, and collaborate across high-stakes settings such as
+                    healthcare, finance, science, and software engineering. This tutorial presents a data-centric roadmap
+                    for building agents that are robust, secure, domain-grounded, and measurable.
+                </p>
+                <p class="lead">
+                    The tutorial connects core KDD themes, including robust learning from noisy data, generalization
+                    across tasks, and responsible decision-making, to emerging challenges in agent systems. Participants
+                    will leave with practical design patterns, evaluation strategies, and open research questions for
+                    trustworthy LLM-based agents.
+                </p>
+            </div>
+            <div class="col-md-4 wow fadeInRightBig" data-animation-delay="200">
+                <div class="info-panel">
+                    <h3>At a Glance</h3>
+                    <p><strong>Venue:</strong> <a href="https://kdd2026.kdd.org/" target="_blank" rel="noopener">ACM KDD 2026</a></p>
+                    <p><strong>Location:</strong> ICC Jeju, Jeju, Korea</p>
+                    <p><strong>Format:</strong> Lecture-style tutorial</p>
+                    <p><strong>Duration:</strong> 3 hours</p>
+                    <p><strong>Prerequisites:</strong> Basic machine learning and familiarity with LLMs</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pillar-grid wow fadeInUp" data-animation-delay="200">
+            <article class="pillar-card">
+                <span class="pillar-number">01</span>
+                <h3>Generalizability</h3>
+                <p>How agents behave under distribution shift, noisy data, changing tasks, and component-level changes.</p>
+            </article>
+            <article class="pillar-card">
+                <span class="pillar-number">02</span>
+                <h3>Security</h3>
+                <p>Threat models for prompt injection, memory poisoning, unsafe tools, multi-agent propagation, and defenses.</p>
+            </article>
+            <article class="pillar-card">
+                <span class="pillar-number">03</span>
+                <h3>Domain Trust</h3>
+                <p>Case studies in science, engineering, medicine, and commerce where domain constraints shape agent behavior.</p>
+            </article>
+            <article class="pillar-card">
+                <span class="pillar-number">04</span>
+                <h3>Evaluation</h3>
+                <p>Benchmarks and metrics that expose trade-offs among robustness, security, fairness, utility, and reliability.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="learn" class="content-section-b">
+    <div class="container">
+        <div class="row wow fadeInRightBig" data-animation-delay="200">
+            <div class="col-md-5">
+                <h2 class="section-heading">What Participants Will Learn</h2>
+            </div>
+            <div class="col-md-7">
+                <ul class="learning-list">
+                    <li>Define trustworthiness for LLM-based agents beyond a single aggregate score.</li>
+                    <li>Identify agent failure modes caused by shifting, degraded, or adversarial data.</li>
+                    <li>Apply security patterns such as least-privilege access, sandboxing, information-flow control, and runtime auditing.</li>
+                    <li>Translate domain constraints into agent design and evaluation requirements.</li>
+                    <li>Design benchmarks that reveal trade-offs instead of masking failures.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="program" class="content-section-a">
+    <div class="container">
+        <div class="wow fadeInLeftBig" data-animation-delay="200">
+            <h2 class="section-heading">Program</h2>
+            <p class="lead schedule-note">Tentative 3-hour outline. Exact KDD tutorial time and room will be added when available.</p>
+        </div>
+
+        <div class="table-responsive wow fadeInUp" data-animation-delay="200">
+            <table class="table program-table">
+                <thead>
+                <tr class="info">
+                    <th>Time</th>
+                    <th>Session</th>
+                    <th>Lead</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><nobr>0:00-0:20</nobr></td>
+                    <td><strong>Introduction:</strong> LLM agents, data-centric AI, and the tutorial trust framework</td>
+                    <td>All speakers</td>
+                </tr>
+                <tr class="success">
+                    <td><nobr>0:20-0:55</nobr></td>
+                    <td><strong>Generalizability:</strong> Distribution shift, noise, component interventions, and agent frameworks</td>
+                    <td>Jian Pei</td>
+                </tr>
+                <tr>
+                    <td><nobr>0:55-1:30</nobr></td>
+                    <td><strong>Security:</strong> Prompt injection, memory poisoning, unsafe tool use, and multi-agent attack propagation</td>
+                    <td>Tianlong Chen</td>
+                </tr>
+                <tr class="active">
+                    <td><nobr>1:30-1:40</nobr></td>
+                    <td><strong>Break</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><nobr>1:40-2:15</nobr></td>
+                    <td><strong>Domain-Grounded Trust:</strong> Science, engineering, medicine, and commerce case studies</td>
+                    <td>Liang Zhao</td>
+                </tr>
+                <tr class="success">
+                    <td><nobr>2:15-2:45</nobr></td>
+                    <td><strong>Evaluation and Benchmarking:</strong> Reference-based, reference-free, and multi-dimensional evaluation</td>
+                    <td>Minxing Zhang</td>
+                </tr>
+                <tr>
+                    <td><nobr>2:45-3:00</nobr></td>
+                    <td><strong>Open Problems and Discussion:</strong> Trade-offs, deployment risks, and community directions</td>
+                    <td>All speakers</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section id="organizers" class="content-section-b">
+    <div class="container">
+        <div class="row wow fadeInRightBig" data-animation-delay="200">
+            <h2 class="section-heading">Organizers</h2>
+
+            <div class="organizer-grid">
+                <article class="organizer-card">
+                    <img class="organizer-photo" src="img/organizer/tianlong.jpg" alt="Tianlong Chen">
+                    <div class="organizer-copy">
+                        <h3><a href="https://tianlong-chen.github.io/" target="_blank" rel="noopener">Tianlong Chen</a></h3>
+                        <p class="affiliation">UNC at Chapel Hill</p>
+                        <p>
+                            Assistant Professor at UNC Chapel Hill and Chief AI Scientist at hireEZ. His work on reliable
+                            machine learning, LLM agent threat models, multi-agent attacks, and practical defenses anchors
+                            the tutorial's security pillar.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="organizer-card">
+                    <img class="organizer-photo" src="img/organizer/jian.jpg" alt="Jian Pei">
+                    <div class="organizer-copy">
+                        <h3><a href="https://sites.duke.edu/jianpei/" target="_blank" rel="noopener">Jian Pei</a></h3>
+                        <p class="affiliation">Duke University</p>
+                        <p>
+                            Arthur S. Pearse Distinguished Professor at Duke University. His research in data mining,
+                            robust learning, data quality, and responsible AI grounds the tutorial's generalizability and
+                            evaluation perspectives.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="organizer-card">
+                    <img class="organizer-photo" src="img/organizer/minxing.jpg" alt="Minxing Zhang">
+                    <div class="organizer-copy">
+                        <h3><a href="https://minxingzhang0107.github.io/" target="_blank" rel="noopener">Minxing Zhang</a></h3>
+                        <p class="affiliation">Duke University</p>
+                        <p>
+                            Ph.D. student at Duke University working on LLM agent trustworthiness, privacy, generalizability,
+                            and conversation-level evaluation. He leads benchmark-focused content and empirical evaluation.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="organizer-card">
+                    <img class="organizer-photo" src="img/organizer/liang.jpg" alt="Liang Zhao">
+                    <div class="organizer-copy">
+                        <h3><a href="https://cs.emory.edu/~lzhao41/index.htm" target="_blank" rel="noopener">Liang Zhao</a></h3>
+                        <p class="affiliation">Emory University</p>
+                        <p>
+                            Winship Distinguished Research Professor and Associate Professor at Emory University. His work
+                            on trustworthy, explainable, and knowledge-augmented AI informs domain-grounded applications.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="materials" class="content-section-a">
+    <div class="container">
+        <div class="row wow fadeInLeftBig" data-animation-delay="200">
+            <div class="col-md-6">
+                <h2 class="section-heading">Materials</h2>
+                <p class="lead">
+                    Tutorial materials will be posted here before KDD 2026. The website will include slides and
+                    tutorial updates for evaluating and securing LLM-based agents.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <ul class="materials-list">
+                    <li><span>Slides</span><strong>Coming soon</strong></li>
+                    <li><span>KDD 2026</span><a href="https://kdd2026.kdd.org/" target="_blank" rel="noopener">Conference website</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contacts" class="content-section-c">
+    <div class="container">
+        <div class="row">
+            <div class="wow fadeInLeftBig" data-animation-delay="200">
+                <h2 class="section-heading contact-heading">Contact</h2>
+                <p class="lead contact-line">
+                    Tianlong Chen: <a href="mailto:tianlong@cs.unc.edu">tianlong@cs.unc.edu</a> &middot;
+                    Jian Pei: <a href="mailto:j.pei@duke.edu">j.pei@duke.edu</a> &middot;
+                    Minxing Zhang: <a href="mailto:minxing.zhang@duke.edu">minxing.zhang@duke.edu</a> &middot;
+                    Liang Zhao: <a href="mailto:liang.zhao@emory.edu">liang.zhao@emory.edu</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>KDD 2026 Tutorial &middot; Trustworthy LLM-Based Agents for Data-Centric AI</p>
+    </div>
+</footer>
+
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/stickUp.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+    jQuery(function ($) {
+        $(document).ready(function () {
+            $('.navbar-default').stickUp();
+        });
+    });
+</script>
+</body>
+</html>
