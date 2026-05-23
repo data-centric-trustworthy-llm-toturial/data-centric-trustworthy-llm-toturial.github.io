@@ -137,22 +137,6 @@ a:focus {
     line-height: 1.75;
 }
 
-.info-panel {
-    padding: 28px;
-    border-left: 5px solid #0f8f7f;
-    background: #fff;
-    box-shadow: 0 10px 30px rgba(37, 49, 59, 0.08);
-}
-
-.info-panel h3 {
-    margin-top: 0;
-    color: #25313b;
-}
-
-.info-panel p {
-    margin-bottom: 12px;
-}
-
 .pillar-grid {
     margin-top: 46px;
     display: grid;
@@ -184,29 +168,6 @@ a:focus {
 .pillar-card p {
     margin: 0;
     line-height: 1.6;
-}
-
-.learning-list {
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
-}
-
-.learning-list li {
-    position: relative;
-    margin-bottom: 16px;
-    padding-left: 34px;
-    font-size: 17px;
-    line-height: 1.65;
-}
-
-.learning-list li:before {
-    content: "\f00c";
-    position: absolute;
-    left: 0;
-    top: 2px;
-    color: #0f8f7f;
-    font-family: FontAwesome;
 }
 
 .schedule-note {
@@ -363,9 +324,6 @@ footer p {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .info-panel {
-        margin-top: 32px;
-    }
 }
 
 @media (max-width: 767px) {
