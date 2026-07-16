@@ -744,3 +744,17 @@ footer p {
         transform: rotate(0deg);
     }
 }
+
+.program-table tbody td {
+    color: #25313b !important;
+}
+
+.program-table tbody tr:hover td {
+    color: #25313b !important;
+    background-color: #f6fbf9 !important;
+}
+
+.program-table tbody tr.active td {
+    color: #25313b !important;
+    background-color: #f1f3f4 !important;
+}
