@@ -553,3 +553,194 @@ footer p {
         background: linear-gradient(135deg, #172126 0%, #25313b 100%);
     }
 }
+
+
+/* ===== Visible fancy layer: hero agent constellation + card icons ===== */
+
+.card-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: rgba(15, 143, 127, 0.10);
+    color: #0f8f7f;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+#why-attend .card-icon {
+    background: rgba(242, 193, 78, 0.16);
+    color: #f2c14e;
+}
+
+.hero-tech-visual {
+    display: none;
+}
+
+/* Only show the floating visual on wide screens.
+   This avoids breaking the hero layout on laptops/tablets/phones. */
+@media (min-width: 1200px) {
+    .hero-content {
+        position: relative;
+        min-height: 340px;
+        padding-right: 390px;
+    }
+
+    .hero-tech-visual {
+        display: block;
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        width: 340px;
+        height: 340px;
+        transform: translateY(-50%);
+        pointer-events: none;
+        animation: techFloat 6s ease-in-out infinite;
+    }
+
+    .tech-ring {
+        position: absolute;
+        border-radius: 50%;
+        border: 1px dashed rgba(255, 255, 255, 0.26);
+        box-shadow: 0 0 38px rgba(15, 143, 127, 0.20);
+    }
+
+    .tech-ring-one {
+        inset: 0;
+        animation: techSpin 28s linear infinite;
+    }
+
+    .tech-ring-two {
+        inset: 60px;
+        border-style: solid;
+        border-color: rgba(242, 193, 78, 0.30);
+        animation: techSpinReverse 22s linear infinite;
+    }
+
+    .tech-core {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 108px;
+        height: 108px;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background:
+            radial-gradient(circle at 35% 25%, rgba(255, 255, 255, 0.24), transparent 34%),
+            linear-gradient(135deg, rgba(15, 143, 127, 0.94), rgba(23, 33, 38, 0.96));
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow:
+            0 0 0 8px rgba(255, 255, 255, 0.05),
+            0 18px 42px rgba(0, 0, 0, 0.34),
+            0 0 42px rgba(15, 143, 127, 0.40);
+    }
+
+    .tech-core .fa {
+        font-size: 34px;
+        margin-bottom: 7px;
+        color: #f2c14e;
+    }
+
+    .tech-core span {
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+    }
+
+    .tech-node {
+        position: absolute;
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        min-width: 94px;
+        height: 36px;
+        padding: 0 12px;
+        border-radius: 999px;
+        background: rgba(23, 33, 38, 0.80);
+        border: 1px solid rgba(242, 193, 78, 0.52);
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 800;
+        box-shadow:
+            0 10px 26px rgba(0, 0, 0, 0.28),
+            0 0 22px rgba(242, 193, 78, 0.14);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+    }
+
+    .tech-node .fa {
+        color: #f2c14e;
+        font-size: 14px;
+    }
+
+    .node-data {
+        left: 50%;
+        top: -8px;
+        transform: translateX(-50%);
+    }
+
+    .node-tools {
+        right: -22px;
+        top: 82px;
+    }
+
+    .node-memory {
+        right: 8px;
+        bottom: 56px;
+    }
+
+    .node-agents {
+        left: 8px;
+        bottom: 56px;
+    }
+
+    .node-trust {
+        left: -22px;
+        top: 82px;
+    }
+
+    .node-eval {
+        left: 50%;
+        bottom: -8px;
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes techFloat {
+    0% {
+        transform: translateY(-50%) translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translateY(-50%) translate3d(0, -12px, 0);
+    }
+    100% {
+        transform: translateY(-50%) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes techSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes techSpinReverse {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
